@@ -1,0 +1,1 @@
+console.log('Website doanh nghiệp đã sẵn sàng!');
