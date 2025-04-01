@@ -74,7 +74,7 @@
   /* Hero Section */
   .hero {
     background: url('../assets/img/hero-bg.jpg') center/cover no-repeat;
-    color: #007bff;
+    color: black;
     text-align: center;
     padding: 100px 20px;
   }
@@ -480,5 +480,36 @@ footer {
     background-color: #0056b3;
   }
   
+  /* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #backToTop:hover {
+    background-color: #0056b3;
+  }
+  
+  .map-wrapper {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+
   
   

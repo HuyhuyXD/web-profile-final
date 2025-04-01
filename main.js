@@ -21,3 +21,24 @@ form.addEventListener('submit', async function (e) {
     alert("Lỗi khi gửi. Vui lòng thử lại sau.");
   }
 });
+
+// Back to Top button
+const backToTopBtn = document.getElementById("backToTop");
+
+// Hiện nút khi cuộn xuống
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+
+// Cuộn lên đầu khi click
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
