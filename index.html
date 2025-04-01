@@ -1,166 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tên Doanh Nghiệp</title>
-
-  <!-- AOS CSS -->
+  <title>Doanh Nghiệp Của Bạn</title>
+  <link rel="stylesheet" href="css/style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <style>
-    /* ===== CSS GỘP TOÀN BỘ ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #fff;
-    }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px;
-    }
-    .btn {
-      background-color: #007bff;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      transition: background-color 0.3s;
-    }
-    .btn:hover {
-      background-color: #0056b3;
-    }
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: #fff;
-      z-index: 999;
-      padding: 20px 0;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #007bff;
-      background-color: #e6f0ff;
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-    nav ul li a:hover,
-    nav ul li a.active {
-      background-color: #007bff;
-      color: white;
-    }
-
-    .hero {
-      padding: 120px 20px;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
-      color: #007bff;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      color: #333;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-      width: 100%;
-      margin-bottom: 15px;
-    }
-
-    footer {
-      background-color: #222;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    #backToTop {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 999;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      font-size: 20px;
-      cursor: pointer;
-      display: none;
-      transition: opacity 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    #backToTop:hover {
-      background-color: #0056b3;
-    }
-
-    #loader-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .loader {
-      border: 6px solid #f3f3f3;
-      border-top: 6px solid #007bff;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
 </head>
 <body>
-  <!-- Loader -->
-  <div id="loader-wrapper">
-    <div class="loader"></div>
-  </div>
 
   <!-- Header -->
   <header>
@@ -168,75 +19,152 @@
       <h1 class="logo">Tên Doanh Nghiệp</h1>
       <nav>
         <ul>
-          <li><a href="#" class="active">Trang chủ</a></li>
-          <li><a href="#about">Giới thiệu</a></li>
-          <li><a href="#services">Dịch vụ</a></li>
-          <li><a href="#contact">Liên hệ</a></li>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h2>Chào mừng đến với doanh nghiệp của chúng tôi</h2>
-      <p>Giải pháp vận chuyển thông minh cho doanh nghiệp hiện đại</p>
-      <a href="#about" class="btn">Tìm hiểu thêm</a>
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h2>Giải pháp vận chuyển thông minh cho doanh nghiệp</h2>
+      <p>Chúng tôi giúp bạn tối ưu chuỗi cung ứng và tiết kiệm chi phí.</p>
+      <a href="#" class="btn">Tìm hiểu thêm</a>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="container" style="padding: 60px 0;">
-    <h2>Giới thiệu</h2>
-    <p>Chúng tôi là đơn vị tiên phong trong ngành vận tải - logistics.</p>
-  </section>
+  <!-- About Section -->
+<section class="about" data-aos="fade-up">
+  <div class="container">
+    <h2>Về Chúng Tôi</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Công ty chúng tôi chuyên cung cấp các giải pháp vận chuyển, hậu cần và quản lý chuỗi cung ứng tối ưu cho doanh nghiệp hiện đại.
+        </p>
+        <p>
+          Với đội ngũ giàu kinh nghiệm và công nghệ tiên tiến, chúng tôi cam kết mang đến dịch vụ an toàn, nhanh chóng và hiệu quả nhất.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="assets/img/about.jpg" alt="Ảnh giới thiệu doanh nghiệp" />
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Services -->
-  <section id="services" class="container" style="padding: 60px 0;">
-    <h2>Dịch vụ</h2>
-    <p>Chúng tôi cung cấp dịch vụ giao hàng, kho bãi, vận chuyển toàn quốc.</p>
-  </section>
+<!-- Services Section -->
+<section class="services" data-aos="fade-up">
+  <div class="container">
+    <h2>Dịch Vụ Của Chúng Tôi</h2>
+    <div class="service-list">
+      <div class="service-box">
+        <h3>Vận chuyển hàng hóa</h3>
+        <p>Đảm bảo hàng hóa đến nơi đúng thời gian, an toàn và tiết kiệm.</p>
+      </div>
+      <div class="service-box">
+        <h3>Quản lý kho bãi</h3>
+        <p>Hệ thống kho hiện đại, quản lý hàng tồn hiệu quả, minh bạch.</p>
+      </div>
+      <div class="service-box">
+        <h3>Chuỗi cung ứng</h3>
+        <p>Giải pháp tối ưu chuỗi cung ứng cho doanh nghiệp từ A-Z.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="container" style="padding: 60px 0;">
-    <h2>Liên hệ</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="Họ tên" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="message" placeholder="Nội dung..." rows="5" required></textarea>
-      <button type="submit" class="btn">Gửi liên hệ</button>
-    </form>
-  </section>
+<!-- Contact Section -->
+<section class="contact" data-aos="fade-up">
+  <div class="container">
+    <h2>Liên Hệ Với Chúng Tôi</h2>
+    <div class="contact-wrapper">
+      <!-- Info -->
+      <div class="contact-info">
+        <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận 1, TP.HCM</p>
+        <p><strong>Hotline:</strong> 0909 123 456</p>
+        <p><strong>Email:</strong> lienhe@tencongty.com</p>
+      </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Tên Doanh Nghiệp. All rights reserved.</p>
-  </footer>
+      <!-- Contact Form -->
+      <form class="contact-form" data-aos="fade-up">
+        <form class="contact-form" action="https://formspree.io/f/mabcdxyz" method="POST">
+          <input type="text" name="name" placeholder="Họ và tên" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Nội dung liên hệ..." rows="5" required></textarea>
+          <button type="submit">Gửi liên hệ</button>
+        </form>
+        
+        <input type="text" placeholder="Họ và tên" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Nội dung liên hệ..." rows="5" required></textarea>
+        <button type="submit">Gửi liên hệ</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-  <button id="backToTop">↑</button>
+<!-- Partners Section -->
+<section class="partners" data-aos="fade-up">
+  <div class="container">
+    <h2>Đối Tác & Khách Hàng</h2>
+    <div class="partner-grid">
+      <img src="assets/img/logo1.png" alt="Partner 1" />
+      <img src="assets/img/logo2.png" alt="Partner 2" />
+      <img src="assets/img/logo3.png" alt="Partner 3" />
+      <img src="assets/img/logo4.png" alt="Partner 4" />
+      <img src="assets/img/logo5.png" alt="Partner 5" />
+      <img src="assets/img/logo6.png" alt="Partner 6" />
+    </div>
+  </div>
+</section>
 
-  <!-- JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
 
-    // back to top
-    const btn = document.getElementById("backToTop");
-    window.addEventListener("scroll", () => {
-      btn.style.display = window.scrollY > 300 ? "block" : "none";
-    });
-    btn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
 
-    // loader
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loader-wrapper");
-      loader.style.opacity = "0";
-      loader.style.visibility = "hidden";
-      loader.style.transition = "all 0.5s ease";
-    });
-  </script>
+
+
+  <!-- Các section tiếp theo sẽ thêm sau -->
+
+  <script src="js/main.js"></script>
 </body>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>Tên Doanh Nghiệp</h3>
+        <p>© 2025 Tên Doanh Nghiệp. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liên kết nhanh</h4>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Dịch vụ</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Kết nối</h4>
+        <div class="social-icons">
+          <a href="#"><img src="assets/img/icon-fb.png" alt="Facebook"></a>
+          <a href="#"><img src="assets/img/icon-yt.png" alt="YouTube"></a>
+          <a href="#"><img src="assets/img/icon-li.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </html>
