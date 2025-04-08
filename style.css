@@ -615,6 +615,51 @@
     border-radius: 8px;
     margin-bottom: 15px;
   }
+
+  .sidebar-schedule {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    width: 240px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 2px solid #007bff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    height: auto;
+  }
+  
+  .sidebar-schedule h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #007bff;
+  }
+  
+  .sidebar-schedule ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .sidebar-schedule li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar-schedule {
+      position: static;
+      width: 100%;
+      margin-top: 30px;
+      border-left: none;
+      border-top: 2px solid #007bff;
+      box-shadow: none;
+      padding: 15px;
+    }
+  }
+  
+  
+
   
   
 
