@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    padding-top: 140px;
+    padding-top: 80px;
   }
   
   .container {
@@ -203,15 +203,17 @@
   
   /* Services Section */
 .services {
-    padding: 80px 20px;
+    padding: 60px 0 40px;
     background-color: #fff;
+    margin-bottom: 0;
   }
   
   .services h2 {
     text-align: center;
     font-size: 32px;
     color: #007bff;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   
   .service-list {
@@ -253,6 +255,29 @@
     font-size: 16px;
     color: #666;
   }
+
+  .service-cta {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;         
+    color: #007bff;                 
+    border: 2px solid #007bff;      
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #007bff;      
+    color: #fff;                    /* Chữ trắng */
+  }
+  
   
   /* Contact Section */
 .contact {
@@ -429,139 +454,189 @@
   }
   
   /* About Page */
+/* Container chung căn giữa toàn bộ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Giới hạn chiều rộng phần about-page */
 .about-page {
-    padding: 80px 20px;
-    background-color: #fff;
-  }
-  
-  .about-page h2 {
-    text-align: center;
-    color: #007bff;
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-  
-  .about-page h3 {
-    margin-top: 30px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .about-page p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .about-page ul {
-    padding-left: 20px;
-    list-style: disc;
-    font-size: 18px;
-    color: #444;
-  }
+  padding: 80px 0; /* tạo khoảng cách top-bottom thoáng hơn */
+  background-color: #fefefe;
+}
+
+.about-page h2 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.about-page h3 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.about-page p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.about-page ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.about-page ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Footer container đồng bộ với phần container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
   
   /* Services Page */
-.services-page {
-    padding: 80px 20px;
-    background-color: #fff;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .services-page h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #007bff;
-    margin-bottom: 40px;
-  }
-  
-  .services-page .service-list {
+  .services-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 0px 80px; /* ✅ Giảm padding-top xuống 30px là vừa */
   }
   
-  .services-page .service-box {
-    background-color: #f9f9f9;
-    padding: 25px;
+  
+  .service-list {
+    display: flex;
+    gap: 24px;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+  
+  .service-box {
+    flex: 1 1 30%;
+    background-color: #f8f9fa;
+    padding: 20px;
     border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
     transition: transform 0.3s;
   }
-  
-  .services-page .service-box:hover {
+  .service-box:hover {
     transform: translateY(-5px);
   }
   
-  .services-page .service-box h3 {
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: #333;
+  .sidebar-schedule {
+    width: 260px;
+    background-color: #fff;
+    border-left: 3px solid #007bff;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    height: fit-content;
+  }
+
+  .btn-learn-more {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 10px;
   }
   
-  .services-page .service-box p {
-    font-size: 16px;
-    color: #555;
+  .btn-learn-more:hover {
+    background-color: #007bff;
+    color: #fff;
   }
+  
+ 
+  
+  
+  
   
   /* Contact Page */
-.contact-page {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .contact-page h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #007bff;
-    margin-bottom: 40px;
+
+  .contact-page {
+    padding: 40px 0 80px;
   }
   
-  .contact-page .contact-wrapper {
+  .contact-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
   }
   
-  .contact-page .contact-info {
-    flex: 1 1 300px;
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
     font-size: 16px;
-    color: #333;
+    line-height: 1.6;
   }
   
-  .contact-page .contact-info p {
-    margin-bottom: 15px;
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
   }
   
-  .contact-page .contact-form {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-page .contact-form input,
-  .contact-page .contact-form textarea {
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
     padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
   }
   
-  .contact-page .contact-form button {
+  .contact-form button {
+    padding: 10px 20px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 12px;
-    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-weight: 500;
+    transition: 0.3s;
   }
   
-  .contact-page .contact-form button:hover {
+  .contact-form button:hover {
     background-color: #0056b3;
   }
+  
+
   
   /* Back to Top Button */
 #backToTop {
@@ -586,7 +661,13 @@
     background-color: #0056b3;
   }
   
-  /* setting img */
+  /* service page */
+  .services {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  
+
   .services-grid {
     display: flex;
     gap: 20px;
@@ -617,8 +698,9 @@
   }
 
   .sidebar-schedule {
-    position: fixed;
-    top: 200px;
+    position: sticky;
+    align-self: center;
+    top: 120px;
     right: 0;
     width: 240px;
     background-color: #f8f9fa;
@@ -646,7 +728,117 @@
     font-size: 14px;
   }
 
+  .service-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 40px; /* để tránh đè footer */
+  }
+
+  .main-services h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 40px;     
+    margin-bottom: 40px;
+  }
+
+  .service-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
   
+  
+  
+  
+  /* Sidebar nằm trong khung section */
+  .sidebar-schedule {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 240px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 2px solid #007bff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    max-height: 100%;
+    z-index: 1;
+  }
+
+  .service-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 40px 80px;
+  }
+  .service-content {
+    width: 70%;
+  }
+
+
+  /* Page thông tin dịch vụ */
+  .service-detail {
+    padding-top: 0; /* Hoặc 0 nếu muốn sát hẳn */
+    margin-top: 0;
+  }
+  
+  .service-layout {
+    margin-top: 0;
+  }
+  
+  .service-content h2 {
+    margin-top: 0;
+  }
+  
+
+  /* 1. Dịch vụ vận chuyển */
+
+  .service-detail {
+    padding: 20px 0 80px;
+    margin: 0;
+    background-image: url('assest/img/Vận\ tải\ đa\ phương\ thức.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .service-detail::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: -1;
+  }
+  
+/* 2. DỊch vụ Logistic */
+  .service-detail-2 {
+    padding: 20px 0 80px;
+    margin: 0;
+    background-image: url('assest/background/982102.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0 60px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .service-detail-2::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+  }
   
 
   
